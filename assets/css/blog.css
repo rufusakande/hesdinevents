@@ -1,0 +1,180 @@
+:root{
+    --btn:#003366;
+    --btnHover: #6699CC;
+    --link: #003366;
+    --linkHover: #6699CC;
+    --text: #333333;
+ }
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.blog .blogHeading{
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.blog .blogHeading h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--btn);
+    border-bottom: 3px var(--btn) solid;
+    display: inline;
+}
+
+.blog .blogHeading p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.blog svg{
+    color: #003366;
+}
+.blog .blogContainer{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.blog .blogContainer .blogLeft{
+    max-width: 600px;
+}
+
+.blog .blogContainer .blogLeft .blogRecherche{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.blog .blogContainer .blogLeft .blogRecherche .rechercheBar{
+    width: fit-content;
+}
+
+.blog .blogContainer .blogLeft .blogRecherche .rechercheBar input{
+    max-width: 450px;
+    border: .1px var(--btnHover) solid;
+    border-radius: 8px;
+    padding: 7px 10px;
+}
+
+.blog .blogContainer .blogLeft .blogRecherche .filter{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.blog .blogContainer .blogLeft .blogRecherche .filter select{
+    max-width: 400px;
+    padding: 7px 10px;
+    border: .1px var(--btnHover) solid;
+    border-radius: 8px;
+}
+
+.blog .blogContainer .blogLeft .blogBox{
+    width: 100%;
+    border: .01px rgb(219, 219, 219) solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.blog .blogContainer .blogLeft .blogBox img{
+    width: 40%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.blog .blogContainer .blogLeft .blogBox .blogBoxInfos{
+    width: 60%;
+    padding: 10px;
+    text-wrap: wrap;
+}
+
+@media screen and (max-width:600px) {
+    .blog .blogContainer .blogLeft .blogBox{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .blog .blogContainer .blogLeft .blogBox img{
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .blog .blogContainer .blogLeft .blogBox .blogBoxInfos{
+        width: 100%;
+        margin: 5px 15px;
+    }
+}
+
+.blog .blogContainer .blogLeft .blogBox .blogBoxInfos h4{
+    color: var(--btn);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.blog .blogContainer .blogLeft .blogBox .blogBoxInfos p,
+.blog .blogContainer .blogLeft .blogBox .blogBoxInfos span{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:600px) {
+    .blog .blogContainer .blogLeft .blogBox{
+        flex-direction: column;
+    }
+
+    .blog .blogContainer .blogLeft .blogBox .blogBoxInfos{
+        padding: 0px;
+    }
+
+    .blog .blogContainer .blogLeft .blogBox .blogBoxInfos h4{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    
+    .blog .blogContainer .blogLeft .blogBox .blogBoxInfos p,
+    .blog .blogContainer .blogLeft .blogBox .blogBoxInfos span{
+        font-size: 12px;
+    }
+}
+
+.blog .blogContainer .blogRight{
+    max-width: 400px;
+    padding: 10px;
+}
+
+.blog .blogContainer .blogRight h4{
+    color: var(--btn);
+    margin-bottom: 15px;
+}
+
+.blog .blogContainer .blogRight .boxNews{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.blog .blogContainer .blogRight .boxNews img{
+    width: 100%;
+    max-height: 200px;
+}
