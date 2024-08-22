@@ -1,0 +1,79 @@
+:root{
+    --btn:#003366;
+    --btnHover: #6699CC;
+    --link: #003366;
+    --linkHover: #6699CC;
+    --text: #333333;
+ }
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.temoignages{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.temoignages .temoignagesHeading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temoignages .temoignagesHeading h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--btn);
+    border-bottom: 3px var(--btn) solid;
+    display: inline;
+}
+
+.nom{
+    color: #003366;
+    font-weight: 600;
+}
+.temoignages .temoignagesHeading p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.temoignages .temoignagesContainer{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.temoignages .temoignagesContainer .temoignagesBox{
+    width: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.temoignages .temoignagesContainer .temoignagesBox .infosTemoins img{
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50%);
+}
+
+.temoignages .temoignagesContainer .temoignagesBox .temoignagesContent{
+    max-width: 450px;
+    border: .2px solid rgb(209, 209, 209);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.temoignages .temoignagesContainer .boxLeft .temoignagesContent{
+    border-radius: 0px 25px 25px 25px;
+}
+
+.temoignages .temoignagesContainer .boxRight .temoignagesContent{
+    border-radius: 25px 0px 25px 25px;
+}

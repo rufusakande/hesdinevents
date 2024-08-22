@@ -1,0 +1,5 @@
+@media screen and (max-width:935px) {
+    .apropos{
+        flex-direction: column-reverse;
+    }
+}

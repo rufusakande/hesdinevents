@@ -1,0 +1,118 @@
+:root{
+    --btn:#003366;
+    --btnHover: #6699CC;
+    --link: #003366;
+    --linkHover: #6699CC;
+    --text: #333333;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contactHeading{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contactHeading h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--btn);
+    border-bottom: 3px var(--btn) solid;
+    display: inline;
+}
+
+.contactHeading p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contactContainer{
+    width: 100%;
+}
+
+.contactContainer .infosContact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px 20px;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactContainer .infosContact .infosContactBox{
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.contactContainer .infosContact .infosContactBox img{
+    clip-path: circle(50%);
+    width: 60px;
+    height: 60px;
+}
+
+.contactContainer .contactFormIframe{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contactContainer .contactFormIframe form{
+    max-width: 450px;
+    width: fit-content;
+    padding: 0px 10px 15px 10px;
+    text-align: center;
+}
+
+.contactContainer .contactFormIframe form input{
+    border: var(--btnHover) .2px solid;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    color: #333333;
+    background-color: var(--btnHover);
+    padding: 6px;
+}
+
+.contactContainer .contactFormIframe form .name,
+.contactContainer .contactFormIframe form .surname{
+    width: 49%;
+}
+
+.contactContainer .contactFormIframe form .object{
+    width: 100%;
+}
+
+.contactContainer .contactFormIframe form .message{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    border: var(--btnHover) .2px solid;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: var(--btnHover);
+    padding: 6px;
+}
+
+.contactContainer .contactFormIframe form .btn{
+    padding: 10px;
+    background-color: var(--btn);
+    color: white;
+    border: .2px solid var(--btn);
+    border-radius: 15px;
+}
