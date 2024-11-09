@@ -1,3 +1,15 @@
+@media screen and (max-width:1000px) {
+    .navDiv nav ul{
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .navDiv nav ul{
+        gap: 12px;
+    }
+}
+
 @media screen and (max-width:935px) {
     .apropos{
         flex-direction: column-reverse;

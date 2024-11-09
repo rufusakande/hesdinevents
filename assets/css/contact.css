@@ -1,6 +1,7 @@
 :root{
     --btn:#003366;
     --btnHover: #6699CC;
+    --bgForm: #6699cc5b;
     --link: #003366;
     --linkHover: #6699CC;
     --text: #333333;
@@ -80,11 +81,11 @@
 }
 
 .contactContainer .contactFormIframe form input{
-    border: var(--btnHover) .2px solid;
+    border: var(--bgForm) .2px solid;
     border-radius: 15px;
     margin-bottom: 15px;
     color: #333333;
-    background-color: var(--btnHover);
+    background-color: var(--bgForm);
     padding: 6px;
 }
 
@@ -101,11 +102,11 @@
     width: 100%;
     resize: none;
     height: 100px;
-    border: var(--btnHover) .2px solid;
+    border: var(--bgForm) .2px solid;
     border-radius: 15px;
     margin-bottom: 15px;
     color: black;
-    background-color: var(--btnHover);
+    background-color: var(--bgForm);
     padding: 6px;
 }
 

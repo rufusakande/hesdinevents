@@ -2,20 +2,21 @@
  * Le code css pour le site Hesdinevent's
  */
 
- :root{
+:root{
     --btn:#003366;
     --btnHover: #6699CC;
     --link: #003366;
     --linkHover: #6699CC;
     --text: #333333;
- }
+    --bg1: #F2F2F2
+}
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Roboto",'Open Sans', 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -35,17 +36,29 @@ li{
 /**
  * Le header pour la page d'accueil
  */
-header{
+
+.header{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 90%;
     max-height: 70px;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(226, 224, 224);
+    background-color: var(--bg1);
     color: #333333;
+    border-radius: 25px;
+    box-shadow: 0px 0px 3px 4px #8f8f8f;
+    position: fixed;
+    top: 15px;
 }
-
+/*
 header .logo{
     width: 100px;
 }
@@ -53,6 +66,14 @@ header .logo{
 header .logo img{
     width: 100%;
 }
+    */
+
+.header .logo a{
+    font-size: clamp(24px, 26px, 28px);
+    font-weight: 900;
+    font-style: italic;
+    color: #003366;
+} 
 
 .navDiv{
     display: flex;
@@ -77,6 +98,8 @@ header .logo img{
 
 .navDiv nav ul li a:hover{
     color: var(--linkHover);
+    padding-bottom: 5px;
+    border-bottom: var(--linkHover) solid 2px;
 }
 
 .navDiv .CTA{
@@ -85,15 +108,6 @@ header .logo img{
     background-color: var(--btn);
     border-radius: 12px;
     transition: ease-in-out 500ms;
-}
-
-@media screen and (max-width:600px) {
-    .navDiv .CTA{
-        display: none;
-    }
-}
-
-.navDiv .CTA a{
     color: white;
     font-size: 20px;
     font-weight: 600;
@@ -103,6 +117,7 @@ header .logo img{
     background-color: var(--btnHover);
     border: 1px solid var(--btnHover);
     padding: 11px;
+    color: black;
 }
 
 header .iconeMenuOvrant,
@@ -117,7 +132,7 @@ main{
     width: 100%;
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
+    padding: 100px 0px 0px 0px;
 }
 
  /* Code générale pour toute les sections */
@@ -132,7 +147,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 50px 30px;
+    padding: 5px 30px 50px 30px;
     margin-top: 120px;
 }
 
@@ -173,7 +188,7 @@ section{
     border: solid 1px var(--btnHover);
     background-color: var(--btnHover);
     border-radius: 5px;
-    box-shadow: 2px 2px 3px 4px var(--btnHover);
+    box-shadow: 0px 0px 7px 6px #b7d8f8;
     padding: 15px;
 }
 
@@ -283,7 +298,7 @@ section{
 
 .services .containerServices .boxServices img{
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 15px 15px 0px 0px;
 }
 

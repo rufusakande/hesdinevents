@@ -7,7 +7,7 @@
         width: 200px;
     }
  }
-@media screen and (max-width:840px) {
+@media screen and (max-width:890px) {
     header .logo{
         width: 120px;
     }
@@ -54,12 +54,12 @@
     }
 
     .navDiv nav ul li a:hover{
-        margin-bottom: 25px;
-        font-size: 22px;
         color: blue;
-        display: block;
-        padding-bottom: 5px;
         border-bottom: .4px solid blue;
     }
 
+    .navDiv .CTA a{
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
 }
